@@ -107,7 +107,7 @@
                 <h2>Alguma dúvida?<br>Fale com a gente!</h2>
                 <div>
                     <form action="#">
-                        <div>
+                        <div class="dadospessoais">
                             <div>
                                 <label for="nome">Nome</label>
                                 <input type="text" name="nome">
@@ -117,15 +117,17 @@
                                 <input type="text" name="email">
                             </div>
                         </div>
-                        <div>
-                            <label for="assunto">Assunto</label>
-                            <input type="text" name="assunto">
+                        <div class="mensagem">
+                            <div>
+                                <label for="assunto">Assunto</label>
+                                <input type="text" name="assunto">
+                            </div>
+                            <div>
+                                <label for="mensagem">Mensagem</label>
+                                <textarea name="mensagem" cols="30" rows="10"></textarea>
+                            </div>
                         </div>
-                        <div>
-                            <label for="mensagem">Mensagem</label>
-                            <input type="text" name="mensagem">
-                        </div>
-                        <input type="submit" value="enviar">
+                        <input class="enviar" type="submit" value="enviar">
                     </form>
                 </div>
             </section>

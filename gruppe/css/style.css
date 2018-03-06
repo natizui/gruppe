@@ -28,7 +28,7 @@ h3 {
 p {
     font-family: 'Asap';
     font-size: 17px;
-    color: grey;
+    color: #7a7873;
 }
 
 a.btn {
@@ -143,6 +143,7 @@ header a:visited {
 
 .desc-sobre h2 {
     text-align: left;
+    margin-bottom: 10px;
 }
 
 .sobre img {
@@ -152,11 +153,14 @@ header a:visited {
 /*#endregion*/
 
 /*#region etapas*/
+.etapas {
+    margin: 100px 0;
+}
 .passos {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 0 150px;
+    margin: 30px 160px;
 }
 
 .passos > div {
@@ -181,11 +185,14 @@ header a:visited {
 .servicos {
     background: url(../img/bg-servicos.png);
     background-size: cover;
-    min-height: 95vh;
+    min-height: 90vh;
     background-repeat: no-repeat;
     background-position: center bottom;
 }
 
+.servicos h2 {
+    padding-top: 50px;
+}
 .cards {
     display: flex;
     justify-content: center;
@@ -234,19 +241,29 @@ header a:visited {
 
 /*#region curiosidades*/
 .curiosidades {
-    background: url(../img/bg-numeros.png)
+    background: url(../img/bg-numeros.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.curiosidades h2 {
+    color: white;
+    font-weight: normal;
+    padding: 25px;
 }
 
 .curiosidades span {
     font-weight: bold;
     color: #fedd6a;
+    font-size: 50px;
 }
 
 .numeros {
     display: flex;
     justify-content: space-around;
-    margin: 0 150px;
-
+    margin: 0 200px;
+    padding-bottom: 30px;
 }
  
 .numeros p {
@@ -259,15 +276,76 @@ header a:visited {
 }
 /*#endregion*/
 
-/*contato*/
+/*#region contato*/
+.contato h2 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
+.contato form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-family: 'Asap';
+    width: 420px;
+    font-size: 15px;
+}
+   
+.contato > div {
+    display: flex;
+    justify-content: center;
+}
 
+.dadospessoais {
+    display: flex;
+    justify-content: center;
+}
+
+.dadospessoais div, .mensagem div {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 10px;
+}
+
+.dadospessoais input {
+    background: #ffeba9;
+    border: 2px solid #fae2a0;
+    padding: 3px 12px;
+}
+.dadospessoais div~div {
+    margin-left: 20px;
+}
+.mensagem input {
+    background: #ffeba9;
+    border: 2px solid #fae2a0;
+    padding: 3px 121px;
+}
+.mensagem textarea {
+    background: #ffeba9;
+    border: 2px solid #fae2a0;
+    padding:
+}
+.enviar {
+    background-color: #05918d;
+    color: white;
+    padding: 1% 41.4%;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Asap';
+    border: 0;
+}
 /*#endregion*/
 
 /*#region newsletter*/
 .newsletter {
     background: #FFDD71;
+    margin-top: 80px; 
+    min-height: 150px;
 }
-
+.newsletter h2 {
+    padding: 30px 0 15px 0;
+}
 .comecaragora {
     background-color: #C1392B;
     color: white;
