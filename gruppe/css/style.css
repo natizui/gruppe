@@ -58,23 +58,9 @@ a.btn {
     font-size: 13px;
     padding: 20px 100px;
 }
-@media (max-width: 900px) {
-    .topbar {
-        background: black;
-        opacity: 0.5;
-        position: initial;
-        font-size: 13px;
-    }    
-}
 
 .topbar ul li {
     display: inline-block;
-}
-@media (max-width: 900px) {
-    .topbar ul li {
-        display: block;
-        text-align: right;
-    }    
 }
 
 .menu a {
@@ -95,13 +81,6 @@ a.quero-btn {
     border: 1px solid #fedd6a;
     border-radius: 5px;
 }
-@media (max-width: 900px) {
-    a.quero-btn {
-        color: #fedd6a;
-        padding: 1px;
-        margin-right: 18px; 
-    }
-}
 /*#endregion*/
 
 /*#region header*/
@@ -114,11 +93,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-@media (max-width: 900px) {
-    header {
-        min-height: 60vh;
-    }
 }
 
 header > div {
@@ -188,27 +162,12 @@ header a:visited {
     justify-content: space-around;
     margin: 30px 160px;
 }
-@media (max-width:780px) {
-    .passos {
-        flex-direction: column;
-        margin: auto;
-    }
-}
 
 .passos > div {
     max-width: 22%;
     text-align: center;
 }
-@media (max-width:780px) {
-    .passos > div {
-        max-width: 60%;
-    }
-}
-@media (max-width:480px) {
-    .passos > div {
-        width: 80%;
-    }
-}
+
 .passos span {
     font-weight: bold;
 }
@@ -237,11 +196,7 @@ header a:visited {
 .cards {
     display: flex;
     justify-content: center;
-}
-@media (max-width: 540px) {
-    .cards {
-        display: block;
-    }
+
 }
 
 .cards div > * {
@@ -286,7 +241,10 @@ header a:visited {
 
 /*#region curiosidades*/
 .curiosidades {
-    background: url(../img/bg-numeros.png)
+    background: url(../img/bg-numeros.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
 
 .curiosidades h2 {
@@ -304,8 +262,8 @@ header a:visited {
 .numeros {
     display: flex;
     justify-content: space-around;
-    margin: 0 150px;
-
+    margin: 0 200px;
+    padding-bottom: 30px;
 }
  
 .numeros p {
@@ -319,15 +277,20 @@ header a:visited {
 /*#endregion*/
 
 /*#region contato*/
-
+.contato h2 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
 .contato form {
     display: flex;
     flex-flow: column;
     align-items: center;
     font-family: 'Asap';
     width: 420px;
+    font-size: 15px;
 }
-
+   
 .contato > div {
     display: flex;
     justify-content: center;
@@ -341,6 +304,7 @@ header a:visited {
 .dadospessoais div, .mensagem div {
     display: flex;
     flex-flow: column;
+    margin-bottom: 10px;
 }
 
 .dadospessoais input {
@@ -376,8 +340,12 @@ header a:visited {
 /*#region newsletter*/
 .newsletter {
     background: #FFDD71;
+    margin-top: 80px; 
+    min-height: 150px;
 }
-
+.newsletter h2 {
+    padding: 30px 0 15px 0;
+}
 .comecaragora {
     background-color: #C1392B;
     color: white;
